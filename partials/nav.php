@@ -1,6 +1,8 @@
 <div class="top__navigation">
   <div class="top__navigation--logo">
+    <a class="top__navigation--link" href="/">
       <img class="top__navigation--image" src="<?php echo get_template_directory_uri(); ?>/assets/img/top-logo.png" alt="Burgsviksbryggeri"/>
+    </a>
   </div>
   <div href="#" id="nav-toggle" class="top__navigation--button button--nav-toggle">MENY</div>
 </div>
