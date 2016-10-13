@@ -1,0 +1,39 @@
+%clearfix {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+%container {
+  max-width: $max-width-large;
+  margin: 0 auto;
+
+}
+
+%underline-white {
+  &:after {
+    content: "";
+    @include rem-fallback(height, 5);
+    @include rem-fallback(width, 120);
+    opacity: 1;
+    background-color: $color-white-white;
+    bottom: 0px;
+    display: block;
+    @include rem-fallback(margin-top, 15);
+  }
+}
+
+%underline-black {
+  &:after {
+    content: "";
+    @include rem-fallback(height, 5);
+    @include rem-fallback(width, 120);
+    opacity: 0.2;
+    background-color: $color-black-black;
+    bottom: 0px;
+    display: block;
+    @include rem-fallback(margin-top, 15);
+  }
+}

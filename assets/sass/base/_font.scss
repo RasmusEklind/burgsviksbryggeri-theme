@@ -1,0 +1,44 @@
+//CenturyFont
+@font-face {
+  font-family: 'CenturyFont';
+  src: url('../font/CenturyFont/ITCCentury Bold/Century-Bold.ttf');
+}
+//BaservilleFont
+@font-face {
+  font-family: 'BaskervilleFont';
+  src: url('../font/BaskervilleFont/I New Baskerville Italic/NewBaskerville-BoldItalic3.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'BaskervilleFont';
+  src: url('../font/BaskervilleFont/I New Baskerville Italic/NewBaskerville-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'BaskervilleFont';
+  src: url('../font/BaskervilleFont/New Baskerville/NewBaskerville-Roman.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//GrotesqueFont
+@font-face {
+  font-family: 'GrotesqueFont';
+  src: url('../font/BrandonGrotesque/BrandonGrotesqueBold/BrandonGrotesque-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GrotesqueFont';
+  src: url('../font/BrandonGrotesque/BrandonGrotesqueMedium/BrandonGrotesque-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GrotesqueFont';
+  src: url('../font/BrandonGrotesque/BrandonGrotesqueMedium/BrandonGrotesque-MediumItalic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}

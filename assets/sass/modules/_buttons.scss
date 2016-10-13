@@ -1,0 +1,32 @@
+.button {
+  font-family: $font-n1-family;
+  font-style: normal;
+
+  &:hover {
+
+  }
+  &:active {
+
+  }
+}
+.top--arrow,
+.button__about--readmore {
+  font-family: $font-n1-family;
+  font-style: normal;
+  display: table;
+  @extend %container;
+  @include rem-fallback(padding-top, 5);
+  @include rem-fallback(padding-bottom, 5);
+  @include rem-fallback(padding-left, 15);
+  @include rem-fallback(padding-right, 15);
+  border: 2px solid $color-dark-grey;
+
+  &:hover {
+    color: $color-white-white;
+    background-color: $color-blue-blue;
+    border-color: $color-blue-blue;
+  }
+  &:active {
+    background-color: lighten($color-blue-blue, 10%);
+  }
+}

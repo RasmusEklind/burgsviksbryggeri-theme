@@ -1,0 +1,23 @@
+.section--about--content {
+  @include rem-fallback(margin-top, 24);
+  @include font-size(24);
+  font-style: italic;
+  font-family: $font-n3-family;
+
+  .p1 {
+    @include rem-fallback(margin-bottom, 50);
+  }
+}
+
+@media only screen and (min-width: $mq-medium) {
+
+.section--about--content {
+  @include rem-fallback(margin-top, 50);
+}
+}
+
+@media only screen and (min-width: $mq-large) {
+  .section--about--content {
+    @include rem-fallback(margin-top, 100);
+  }
+}

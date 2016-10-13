@@ -6,6 +6,9 @@ module.exports = function (grunt) {
             },
             dist: {
                 src: [
+                    'node_modules/jquery/dist/jquery.min.js',
+                    'node_modules/jquery-color-animation/jquery.animate-colors-min.js',
+                    'assets/js/googlemap.js',
                     'assets/js/theme.js'
                 ],
                 dest: 'assets/js/theme.min.js'
@@ -52,6 +55,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-
     grunt.registerTask('default', ['sass', 'concat', 'uglify']);
 };

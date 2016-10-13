@@ -1,0 +1,24 @@
+@mixin font-size($px, $base: 16) {
+	font-size: $px + px;
+	font-size: ($px / $base) + rem;
+}
+
+@mixin rem-fallback($property, $sizeValue) {
+
+  #{$property}: $sizeValue + px;
+  #{$property}: ($sizeValue / 16) + rem;
+}
+
+@function rem($px-value) {
+  @if not unitless($px-value) {
+    $px-value: strip-units($px-value);
+  }
+
+  $base: $base-font-size;
+
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+
+  @return ($px-value / $base) * 1rem;
+}

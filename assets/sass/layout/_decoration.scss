@@ -1,0 +1,16 @@
+.decoration {
+  @include rem-fallback(height, 500);
+  background-position: center center;
+  background-size: cover;
+}
+
+.decoration--thebar {
+  background-image: url("../img/en-bild.png");
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: $mq-medium) {
+  .decoration--thebar {
+  //position: fixed;
+  }
+}

@@ -1,0 +1,50 @@
+.footer {
+  background-color: $color-black-black;
+}
+
+.footer__content {
+  @extend %container;
+  text-align: center;
+  color: $color-white-white;
+  @include rem-fallback(padding-bottom, 50);
+}
+.footer__heading {
+  display: inline-block;
+  color: $color-white-white;
+  @extend %underline-white;
+  @include rem-fallback(margin-bottom, 50);
+
+}
+.footer--icons {
+  @include font-size(42);
+  @include rem-fallback(margin-bottom, 42);
+
+}
+.footer--icons--item {
+  display: inline-block;
+  border: 2px solid $color-white-white;
+
+  &:nth-of-type(1) {
+  @include rem-fallback(margin-bottom, 25);
+
+  &:hover {
+    color: $color-dark-grey;
+    background-color: $color-white-white;
+  }
+  &:active {
+    color: lighten($color-dark-grey, 10%);
+    background-color: darken($color-white-white, 10%);
+  }
+}
+}
+
+@media only screen and (min-width: $mq-medium) {
+  .footer--icons--item {
+    padding: 5px;
+
+    &:nth-of-type(1) {
+    @include rem-fallback(margin-right, 20);
+    @include rem-fallback(margin-bottom, 0);
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.section--contact--content {
+  @include rem-fallback(margin-top, 24);
+}
+
+.section__content--contact {
+  color: $color-white-white;
+}
+.section__heading--contact {
+  color: $color-white-white;
+
+  &:after {
+    opacity: 1;
+    background-color: $color-white-white;
+  }
+}
+
+.contact--address {
+  @include font-size(20);
+  font-weight: bold;
+  @include rem-fallback(padding-bottom, 50);
+}
+
+.contact--icons {
+  margin: 0 auto;
+  @include font-size(20);
+  font-weight: bold;
+  @include rem-fallback(max-width, 330);
+  @include rem-fallback(padding-top, 50);
+  @include rem-fallback(padding-left, 50);
+}
+.contact--map {
+  @include rem-fallback(height, 400);
+}
+.contact--icons--item {
+  padding-left: 0;
+  @include rem-fallback(margin-bottom, 25);
+  display: inline-block;
+
+  &:before {
+    margin-left: 0;
+    @include font-size(52);
+  }
+
+  &:active {
+    color: darken($color-white-white, 15%);
+  }
+}
+.contact--icons--link {
+  text-decoration: none;
+  &:focus,
+  &:active,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: $mq-medium) {
+
+.section--contact--content {
+  @include rem-fallback(margin-top, 50);
+}
+
+.contact--icons--item {
+  display: list-item;
+}
+
+.contact--address {
+  vertical-align: top;
+  width: 49%;
+  display: inline-block;
+}
+.contact--map {
+  width: 49.5%;
+  display: inline-block;
+  @include rem-fallback(padding-bottom, 40);
+
+}
+}
+@media only screen and (min-width: $mq-large) {
+  .section--contact--content {
+    @include rem-fallback(margin-top, 100);
+  }
+}

@@ -1,0 +1,62 @@
+header {
+  height: $max-height-100;
+  position: relative;
+  overflow: hidden;
+  background: url("../img/burgsviksbryggeri-header-mobile.jpg") center no-repeat;
+  background-size: cover;
+}
+.dark {
+  background-color: $color-dark-grey;
+}
+.light {
+  background-color: $color-white-white;
+}
+
+.top__navigation {
+  background-color: $color-white-white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color .25s ease;
+  @include rem-fallback(height, 70);
+  z-index: 2;
+
+  &--logo {
+  background-color: $color-white-white;
+  position: fixed;
+  top: 0%;
+  left: 3%;
+  display: inline-block;
+}
+
+  &--image {
+    @include rem-fallback(margin-top, 8);
+    @include rem-fallback(max-height, 50);
+  }
+}
+.top--arrow {
+position: absolute;
+display: inline-block;
+bottom: 1%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+border: 2px solid $color-dark-grey;
+background-color: $color-white-white;
+@include font-size(24);
+
+}
+
+@media only screen and (min-width: $mq-medium) {
+  header {
+    background: url("../img/burgsviksbryggeri-header.jpg") center no-repeat;
+  }
+.top__navigation {
+  @include rem-fallback(height, 100);
+  &--image {
+    @include rem-fallback(margin-top, 15);
+    @include rem-fallback(max-height, 70);
+  }
+}
+
+}

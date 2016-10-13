@@ -1,0 +1,77 @@
+.a11y-accesskeys-span {
+  position: absolute;
+  display: inline-block;
+  top: -40%;
+}
+
+.section {
+  position: relative;
+  @include rem-fallback(padding-top, 30);
+  @include rem-fallback(padding-right, 15);
+  @include rem-fallback(padding-bottom, 45);
+  @include rem-fallback(padding-left, 15);
+
+  &--contact {
+    @include rem-fallback(padding-top, 100);
+  }
+}
+
+.section--products {
+  @include rem-fallback(padding-right, 0);
+  @include rem-fallback(padding-left, 0);
+}
+
+.section__content {
+  @extend %clearfix;
+  @extend %container;
+
+  &--products {
+  max-width: $max-width-xlarge;
+  @include rem-fallback(padding-bottom, 0);
+  @include rem-fallback(padding-left, 15);
+  @include rem-fallback(padding-right, 15);
+  @include rem-fallback(padding-top, 0);
+  }
+
+  &--location {
+    max-width: $max-width-medium;
+  }
+
+  &--about {
+    max-width: $max-width-medium;
+
+  }
+
+  &--thebar {
+    max-width: $max-width-xlarge;
+    @include rem-fallback(padding-bottom, 0);
+    @include rem-fallback(padding-top, 0);
+  }
+
+  &--contact {
+    max-width: $max-width-large;
+  }
+}
+
+
+.section__heading {
+  @extend %underline-black;
+  @include rem-fallback(margin-bottom, 50);
+  max-width: $max-width-medium;
+  margin: 0 auto;
+}
+
+.section--contact {
+  background-color: $color-black-black;
+}
+
+@media only screen and (min-width: $mq-medium) {
+
+  .section__heading {
+    text-align: left;
+  }
+
+  .section {
+    @include rem-fallback(margin-top, 200);
+  }
+  }

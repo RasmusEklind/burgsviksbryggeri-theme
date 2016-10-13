@@ -1,0 +1,49 @@
+.section--location--content {
+  @include rem-fallback(margin-top, 24);
+
+  .p1 {
+      @include font-size(24);
+      font-style: italic;
+      font-family: $font-n3-family;
+    }
+}
+
+.section--location--quote {
+  font-family: $font-n3-family;
+  font-style: italic;
+  font-weight: bold;
+  @include font-size(20);
+  @include rem-fallback(margin-top, 50);
+  @include rem-fallback(margin-bottom, 50);
+}
+
+.location__featured-image {
+  height: 100%;
+  @include rem-fallback(max-width, 400);
+  display: block;
+  @extend %container;
+  @include rem-fallback(margin-bottom, 50);
+}
+
+@media only screen and (min-width: $mq-medium) {
+
+  .section--location--content {
+    @include rem-fallback(margin-top, 50);
+  }
+}
+
+@media only screen and (min-width: $mq-large) {
+
+  .section--location--content {
+    @include rem-fallback(margin-top, 100);
+
+    .p1 {
+      width: 100%;
+    }
+
+  }
+  .section--location--quote {
+    width: 70%;
+  }
+
+}
