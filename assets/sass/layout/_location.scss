@@ -19,7 +19,7 @@
 
 .location__featured-image {
   height: 100%;
-  @include rem-fallback(max-width, 400);
+  @include rem-fallback(width, 200);
   display: block;
   @extend %container;
   @include rem-fallback(margin-bottom, 50);
@@ -44,5 +44,7 @@
   .section--location--quote {
     width: 70%;
   }
-
+  .location__featured-image {
+    @include rem-fallback(width, 400);
+  }
 }
