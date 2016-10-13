@@ -4,7 +4,7 @@
     <h2 class="section__heading section__heading--thebar">Baren</h2>
       <div class="section--content--thebar">
           <?php
-          $posts = get_posts(array('category' => 8, 'posts_per_page' => 2));
+          $posts = get_posts(array('category' => 6, 'posts_per_page' => 2));
           foreach ($posts as $post) :
           setup_postdata($post); ?>
               <div class="thebar__teaser--body">
