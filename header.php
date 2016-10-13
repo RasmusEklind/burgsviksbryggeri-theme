@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/theme.css'; ?>">
 	</head>
 	<body>
-			<header class="header clear" role="banner">
+			<header class="main--header header clear" role="banner">
 				<?php get_template_part('partials/nav'); ?>
 				<div class="section__content section__content--logo">
 					<a class="top--arrow icon-down-open nostylelink" href="#about"></a>

@@ -19,7 +19,7 @@
                 }
                 ?>
                 <h3 class="product__teaser--title">
-                  <a class="product__teaser--link" href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
+                  <a class="product__teaser--link" href=""><?php the_title(); ?></a>
                 </h3>
               </div>
               <div class="product__teaser--body">

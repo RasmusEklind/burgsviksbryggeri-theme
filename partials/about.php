@@ -4,9 +4,9 @@
     <?php $post = get_post(15); ?>
       <h1 class="section__heading section__heading--about">Burgsviks</br>Bryggeri</h1>
       <div class="section--about--content">
-        <?php echo apply_filters('the_content', $post->post_content); ?>
+        <?php echo the_excerpt(); ?>
         <div class="button__about--readmore">
-          <a class="nostylelink" href="#about">LÄS MER</a>
+          <a class="nostylelink" href="<?php echo the_permalink(); ?>">LÄS MER</a>
         </div>
       </div>
   </div>

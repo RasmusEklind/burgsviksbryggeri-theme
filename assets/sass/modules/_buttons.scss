@@ -19,6 +19,7 @@
   @include rem-fallback(padding-bottom, 5);
   @include rem-fallback(padding-left, 15);
   @include rem-fallback(padding-right, 15);
+  @include rem-fallback(margin-top, 50);
   border: 2px solid $color-dark-grey;
 
   &:hover {

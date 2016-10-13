@@ -1,0 +1,26 @@
+.article__body--excerpt {
+  @include rem-fallback(margin-top, 50);
+  @include font-size(24);
+  font-style: italic;
+  font-family: $font-n3-family;
+}
+.article__body--content {
+  @include rem-fallback(margin-top, 50);
+  @include font-size(20);
+  font-family: $font-n3-family;
+
+  p {
+    @include rem-fallback(margin-top, 20);
+    @include rem-fallback(margin-bottom, 20);
+
+  }
+}
+.article__body {
+  max-width: $max-width-medium;
+}
+@media only screen and (min-width: $mq-large) {
+  .article__body--excerpt,
+  .article__body--content {
+    @include rem-fallback(margin-top, 100);
+  }
+}
