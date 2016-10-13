@@ -12,7 +12,6 @@
   p {
     @include rem-fallback(margin-top, 20);
     @include rem-fallback(margin-bottom, 20);
-
   }
 }
 .article__body {

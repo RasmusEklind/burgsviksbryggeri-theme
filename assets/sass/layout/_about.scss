@@ -10,10 +10,9 @@
 }
 
 @media only screen and (min-width: $mq-medium) {
-
-.section--about--content {
-  @include rem-fallback(margin-top, 50);
-}
+  .section--about--content {
+    @include rem-fallback(margin-top, 50);
+  }
 }
 
 @media only screen and (min-width: $mq-large) {
