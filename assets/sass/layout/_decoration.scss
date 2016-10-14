@@ -1,23 +1,27 @@
 .decoration {
-  @include rem-fallback(height, 500);
+  @include rem-fallback(height, 550);
   background-position: center center;
-  max-width: $max-width-xlarge;
+  max-width: $max-width-medium;
   margin: 0 auto;
 }
 
 .decoration--thebar {
-  background-image: url("../img/en-bild-small.jpg");
+  background-image: url("../img/en-bild.jpg");
   background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (min-width: $mq-medium) {
+
+  .decoration {
+    @include rem-fallback(height, 873);
+  }
 }
 
 @media only screen and (min-width: $mq-large) {
 
   .decoration {
+      max-width: $max-width-xlarge;
     @include rem-fallback(height, 1200);
-  }
-
-  .decoration--thebar {
-  background-size: contain;
-  background-image: url("../img/en-bild.jpg");
   }
 }
