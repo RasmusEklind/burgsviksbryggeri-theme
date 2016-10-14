@@ -76,6 +76,7 @@
   .section__content {
 
     &--thebar {
+      box-shadow: 2px 4px 4px #888888;
       @include rem-fallback(margin-top, -110);
     }
   }
