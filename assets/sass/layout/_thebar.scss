@@ -1,15 +1,23 @@
 .section--content--thebar {
   @include rem-fallback(margin-top, 24);
 }
+.section__heading--thebar {
+  color: $color-white-white;
+  @include rem-fallback(padding-top, 20);
+  @include rem-fallback(padding-right, 20);
+  @include rem-fallback(padding-bottom, 0);
+  @include rem-fallback(padding-left, 20);
+
+  &:after {
+    opacity: 1;
+    background-color: $color-white-white;
+  }
+}
 
 .thebar__teaser--body {
   @include font-size(18);
-  @include rem-fallback(padding-left, 15);
-  @include rem-fallback(padding-right, 15);
-  @include rem-fallback(padding-top, 20);
-  @include rem-fallback(padding-bottom, 20);
-  background-color: #f1f1f1;
-  color: $color-dark-grey;
+  @include rem-fallback(padding, 15);
+  color: $color-white-white;
 }
 
 .thebar__featured-image {
@@ -25,13 +33,13 @@
   .thebar__teaser--body {
     @include rem-fallback(margin-bottom, 20);
     vertical-align: top;
-    width: 59%;
-    display: inline-block;
+  //  width: 59%;
+//    display: inline-block;
   }
 
   .thebar__featured-image {
-    width: 40%;
-    display: inline-block;
+  //  width: 40%;
+    //display: inline-block;
   }
 }
 
@@ -42,15 +50,20 @@
   }
 
   .thebar__teaser--body {
+    @include rem-fallback(padding-left, 15);
+    @include rem-fallback(padding-top, 0);
+    @include rem-fallback(padding-right, 0);
+    @include rem-fallback(padding-bottom, 15);
     @include font-size(20);
-    @include rem-fallback(padding, 15);
     vertical-align: top;
     display: inline-block;
-    width: 45%;
+    width: 47.6%;
     text-align: inherit;
   }
 
   .thebar__featured-image {
-    width: 54%;
+    @include rem-fallback(padding-left, 15);
+    display: inline-block;
+    width: 50%;
   }
 }

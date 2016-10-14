@@ -15,7 +15,7 @@
   }
 }
 .article__body {
-  max-width: $max-width-medium;
+  @include rem-fallback(max-width, 700);
 }
 @media only screen and (min-width: $mq-large) {
   .article__body--excerpt,

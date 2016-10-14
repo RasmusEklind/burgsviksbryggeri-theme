@@ -37,9 +37,10 @@
   }
 
   &--thebar {
-    max-width: $max-width-xlarge;
+    max-width: $max-width-medium;
     @include rem-fallback(padding-bottom, 0);
     @include rem-fallback(padding-top, 0);
+    background-color: $color-black-black;
   }
 
   &--contact {
@@ -69,3 +70,13 @@
     @include rem-fallback(margin-top, 200);
   }
   }
+
+@media only screen and (min-width: $mq-large) {
+
+  .section__content {
+
+    &--thebar {
+      @include rem-fallback(margin-top, -110);
+    }
+  }
+}

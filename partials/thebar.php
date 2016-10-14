@@ -1,5 +1,6 @@
 <section class="section section--thebar">
   <span class="a11y-accesskeys-span" id="thebar" tabindex="-1"></span>
+  <div class="decoration decoration--thebar"></div>
   <div class="section__content section__content--thebar">
     <h2 class="section__heading section__heading--thebar">Baren</h2>
       <div class="section--content--thebar">

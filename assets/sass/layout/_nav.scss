@@ -135,7 +135,7 @@
   }
 }
 
-@media only screen and (min-width: $mq-medium) {
+@media only screen and (min-width: $mq-large) {
 
   .button--nav-toggle {
     @include font-size(20);
