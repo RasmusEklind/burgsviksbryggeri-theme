@@ -16,6 +16,9 @@
 		<meta property="og:locale" content="sv_SE">
 		<meta property="og:type" content="website">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/theme.css'; ?>">
+			<?php
+			 wp_head();
+			 ?>
 	</head>
 	<body>
 			<header class="main--header header clear" role="banner">

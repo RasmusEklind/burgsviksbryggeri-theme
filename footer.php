@@ -25,5 +25,8 @@
       ga('create', 'UA-82215936-1', 'auto');
       ga('send', 'pageview');
     </script>
+    <?php
+    wp_footer();
+?>
 </body>
 </html>
