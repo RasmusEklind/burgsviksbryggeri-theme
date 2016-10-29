@@ -9,6 +9,7 @@
   background-image: url("../img/en-bild.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: bottom;
 }
 
 @media only screen and (min-width: $mq-medium) {
@@ -22,6 +23,6 @@
 
   .decoration {
       max-width: $max-width-xlarge;
-    @include rem-fallback(height, 1200);
+    @include rem-fallback(height, 900);
   }
 }

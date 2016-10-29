@@ -8,6 +8,10 @@
   &--contact {
     @include rem-fallback(padding-top, 100);
   }
+
+  &--thebar {
+    @include rem-fallback(padding-bottom, 15);
+  }
 }
 
 .section--products {
@@ -84,7 +88,7 @@
   .section__content {
 
     &--thebar {
-      box-shadow: 2px 4px 4px #888888;
+      box-shadow: 3px 4px 10px $color-dark-grey;
       @include rem-fallback(margin-top, -110);
     }
   }

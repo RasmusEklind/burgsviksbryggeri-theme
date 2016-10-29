@@ -2,7 +2,7 @@
   @include rem-fallback(margin-top, 24);
 
   .p1 {
-      @include font-size(24);
+      @include font-size(22);
       font-style: italic;
       font-family: $font-n3-family;
     }
@@ -22,7 +22,7 @@
   @include rem-fallback(width, 200);
   display: block;
   @extend %container;
-  @include rem-fallback(margin-bottom, 50);
+//  @include rem-fallback(margin-bottom, 50);
 }
 
 @media only screen and (min-width: $mq-medium) {
@@ -38,6 +38,7 @@
     @include rem-fallback(margin-top, 100);
 
     .p1 {
+      @include font-size(24);
       width: 100%;
     }
   }
