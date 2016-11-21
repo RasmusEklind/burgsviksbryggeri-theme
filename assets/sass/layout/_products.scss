@@ -52,7 +52,7 @@ overflow: hidden;
 }
 
 .product__teaser--icon {
-  border: 2px solid $color-dark-grey;
+  border: 3px solid $color-dark-grey;
   @include font-size(24);
 
   &:hover {
@@ -95,7 +95,7 @@ overflow: hidden;
 @media only screen and (min-width: $mq-large) {
 
   .product__teaser {
-    width: 49%;
+    width: 49.3333333%;
     margin-right: 0;
 
       &:nth-of-type(odd) {
@@ -118,7 +118,7 @@ overflow: hidden;
   .relative-div {
     vertical-align: top;
     display: inline-block;
-    width: 48%;
+    width: 49.31%;
   }
   .product__teaser--body {
     vertical-align: top;
