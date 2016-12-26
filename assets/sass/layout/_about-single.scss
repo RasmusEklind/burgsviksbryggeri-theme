@@ -1,7 +1,7 @@
 .article__body--excerpt {
   @include rem-fallback(margin-top, 50);
   @include font-size(24);
-  font-style: italic;
+  font-style: normal;
   font-family: $font-n3-family;
 }
 .article__body--content {

@@ -35,6 +35,8 @@
     position: relative;
     height: 70%;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: center;
   }
@@ -45,7 +47,8 @@
   display: inline-block;
   position: relative;
   height: 100%;
-  @include font-size(22);
+  text-transform: uppercase;
+  @include font-size(18);
 
   &--item {
     @include rem-fallback(margin-top, 40);
@@ -91,6 +94,8 @@
         bottom: 0;
         left: 50%;
         width: 0%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         @include rem-fallback(height, 3);
         transition: .35s;
