@@ -72,7 +72,7 @@
   }
 
   .section {
-    @include rem-fallback(margin-top, 100);
+    @include rem-fallback(margin-top, 80);
   }
 
   .section__content {
@@ -95,6 +95,6 @@
   }
 
   .section {
-    @include rem-fallback(margin-top, 200);
+    @include rem-fallback(margin-top, 120);
   }
 }
