@@ -42,9 +42,6 @@
 
   &--thebar {
     max-width: $max-width-medium;
-    @include rem-fallback(padding-bottom, 0);
-    @include rem-fallback(padding-top, 0);
-    background-color: $color-black-black;
   }
 
   &--contact {
@@ -73,13 +70,21 @@
 
   .section {
     @include rem-fallback(margin-top, 80);
+
+    &--thebar {
+      padding: 0;
+    }
+
+    &--contact {
+      margin-top: 0;
+    }
   }
 
   .section__content {
 
     &--thebar {
-      @include rem-fallback(margin-top, -110);
-    }
+      padding-left: 15px;
+      padding-right: 15px;    }
   }
 
   }
@@ -89,12 +94,16 @@
   .section__content {
 
     &--thebar {
-      box-shadow: 3px 4px 10px $color-dark-grey;
-      @include rem-fallback(margin-top, -110);
+    //  box-shadow: 3px 4px 10px $color-dark-grey;
+    //  @include rem-fallback(margin-top, 0);
     }
   }
 
   .section {
     @include rem-fallback(margin-top, 120);
+
+    &--contact {
+      margin-top: 0;
+    }
   }
 }

@@ -1,6 +1,6 @@
 <footer class="footer" role="contentinfo">
   <div class="footer__content">
-  <h2 class="footer__heading">Följ oss</h2>
+  <h2 class="footer__heading">FÖLJ OSS</h2>
   <div class="footer--icons">
     <ul>
       <a class="footer--icons--link nostylelink" href="http://facebook.com/burgsviksbryggeri">
@@ -8,6 +8,9 @@
       </a>
       <a class="footer--icons--link nostylelink" href="http://instagram.com/burgsviksbryggeri">
       <li class="footer--icons--item icon-instagram nostylelist"></li>
+      </a>
+      <a class="footer--icons--link nostylelink" href="https://untappd.com/burgsviksbryggeri">
+      <li class="footer--icons--item icon-beer nostylelist"></li>
       </a>
     </ul>
   </div>

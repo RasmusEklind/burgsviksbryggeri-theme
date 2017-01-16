@@ -78,6 +78,6 @@
 }
 @media only screen and (min-width: $mq-large) {
   .section--contact--content {
-    @include rem-fallback(margin-top, 100);
+    @include rem-fallback(margin-top, 80);
   }
 }

@@ -34,7 +34,7 @@
 @media only screen and (min-width: $mq-large) {
 
   .section--location--content {
-    @include rem-fallback(margin-top, 100);
+    @include rem-fallback(margin-top, 80);
 
     .p1 {
       @include font-size(24);

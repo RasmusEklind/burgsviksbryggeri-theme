@@ -130,6 +130,6 @@ overflow: hidden;
     width: 50%;
   }
   .section--content--products {
-    @include rem-fallback(padding-top, 100);
+    @include rem-fallback(padding-top, 80);
   }
 }

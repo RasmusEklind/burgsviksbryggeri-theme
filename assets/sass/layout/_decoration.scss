@@ -1,28 +1,40 @@
 .decoration {
-  @include rem-fallback(height, 550);
+  @include rem-fallback(height, 650);
   background-position: center center;
-  max-width: $max-width-medium;
-  margin: 0 auto;
+  background-size: contain;
+
+  //margin: 0 auto;
 }
 
 .decoration--thebar {
-  background-image: url("../img/en-bild.jpg");
+  background-image: url("../img/en-magisk-bild.jpg");
+  height: 0;
+  padding: 0; /* remove any pre-existing padding, just in case */
+  padding-bottom: 75%; /* for a 4:3 aspect ratio */
+  background-position: center center;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
 }
 
-@media only screen and (min-width: $mq-medium) {
+@media only screen and (min-width: 768px) {
+  .decoration--thebar {
+    padding-bottom: 40%; /* for a 4:3 aspect ratio */
+  }
 
   .decoration {
-    @include rem-fallback(height, 873);
+    background-size: cover;
+     width: 48%;
+     display: inline-block;
+    vertical-align: bottom;
+    @include rem-fallback(height, 800);
   }
 }
 
 @media only screen and (min-width: $mq-large) {
 
   .decoration {
-      max-width: $max-width-xlarge;
+    width: 50%;
     @include rem-fallback(height, 900);
+    @include rem-fallback(max-height, 900);
   }
 }

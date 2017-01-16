@@ -33,6 +33,6 @@
 @media only screen and (min-width: $mq-large) {
   .section--about--content {
     @include font-size(24);
-    @include rem-fallback(margin-top, 100);
+    @include rem-fallback(margin-top, 80);
   }
 }
