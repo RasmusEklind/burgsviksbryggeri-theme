@@ -4,7 +4,7 @@
     <div class="section--campaign--content">
 
 
-    <p>Nu är det inte långt kvar tills vi gör premiär på Systembolaget!</p>
+    <p>Nu är det inte långt kvar tills att vi gör premiär på Systembolaget!</p>
     <div id="clockdiv">
       <div>
         <span class="clockdiv--info days"></span>
