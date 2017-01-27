@@ -1,0 +1,102 @@
+
+.section--campaign {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section__content--campaign {
+  color: white;
+  font-family: $font-n3-family;
+}
+.section--campaign--content {
+  text-align: center;
+  font-size: 22px;
+  @include rem-fallback(padding-top, 34);
+  @include rem-fallback(padding-bottom, 24);
+
+}
+#clockdiv{
+  @include rem-fallback(margin-top, 24);
+  @include rem-fallback(margin-bottom, 24);
+  text-align: center;
+//	font-family: sans-serif;
+	color: #222;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 22px;
+}
+.clockdiv--info {
+  border-bottom: 2px solid #222;
+  }
+
+#clockdiv > div{
+	padding: 10px;
+	background: #fff;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 10px;
+  margin-bottom: 15px;
+	background: #fff;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+@media only screen and (min-width: $mq-medium) {
+
+
+  .section__heading--campaign{
+    margin: 0px 0px 20px;
+    padding-top: 50px;
+    color: white;
+    &:after {
+      background-color: white;
+      opacity: 1;
+    }
+  }
+  .section__content--campaign {
+  color: white;
+  font-family: $font-n3-family;
+  }
+  .section--campaign--content {
+    text-align: center;
+    font-size: 34px;
+    @include rem-fallback(padding-top, 70);
+    @include rem-fallback(padding-bottom, 50);
+
+  }
+  #clockdiv{
+    @include rem-fallback(margin-top, 40);
+    @include rem-fallback(margin-bottom, 40);
+    text-align: center;
+  //	font-family: sans-serif;
+  	color: #222;
+  	display: inline-block;
+  	font-weight: 100;
+  	text-align: center;
+  	font-size: 34px;
+  }
+
+  #clockdiv > div{
+  	padding: 15px;
+  	background: #fff;
+  	display: inline-block;
+  }
+
+  #clockdiv div > span{
+  	padding: 15px;
+    margin-bottom: 15px;
+  	background: #fff;
+  	display: inline-block;
+  }
+
+  .smalltext{
+  	padding-top: 5px;
+  	font-size: 18px;
+  }
+}

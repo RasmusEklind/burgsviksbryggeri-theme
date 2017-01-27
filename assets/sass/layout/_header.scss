@@ -4,6 +4,10 @@
   overflow: hidden;
   background: url("../img/burgsviksbryggeri-header-mobile.jpg") center no-repeat;
   background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .dark {
   background-color: $color-dark-grey;
@@ -55,6 +59,10 @@ background-color: $color-white-white;
   .main--header {
     background: url("../img/burgsviksbryggeri-header-medium.jpg") center no-repeat;
     background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -70,6 +78,10 @@ background-color: $color-white-white;
   .main--header {
     background: url("../img/burgsviksbryggeri-header-large.jpg") center no-repeat;
     background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 @media only screen and (min-width: $mq-xlarge) {
@@ -77,5 +89,9 @@ background-color: $color-white-white;
   .main--header {
     background: url("../img/burgsviksbryggeri-header-xlarge.jpg") center no-repeat;
     background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

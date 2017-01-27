@@ -9,6 +9,7 @@ module.exports = function (grunt) {
                     'node_modules/jquery/dist/jquery.min.js',
                     'node_modules/jquery-color-animation/jquery.animate-colors-min.js',
                     'assets/js/googlemap.js',
+                    'assets/js/campaign.js',
                     'assets/js/theme.js'
                 ],
                 dest: 'assets/js/theme.min.js'

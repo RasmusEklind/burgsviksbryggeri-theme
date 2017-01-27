@@ -23,7 +23,7 @@
 	<body>
 			<header class="main--header header clear" role="banner">
 				<?php get_template_part('partials/nav'); ?>
-				<div class="section__content section__content--logo">
-					<a class="top--arrow icon-down-open nostylelink" href="#about"></a>
-				</div>
+				<!-- <div class="section__content section__content--logo">
+					<a class="top--arrow icon-down-open nostylelink" href="#campaign"></a>
+				</div> -->
 			</header>

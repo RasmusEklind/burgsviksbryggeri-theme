@@ -12,15 +12,33 @@
         }
         ?>
         </div>
-        <?php
-        $image_classes = 'location__featured-image';
+        <div class="section--content--locations">
+              <?php
+              $posts = get_posts(array('category' => 5, 'posts_per_page' => 10));
+              foreach ($posts as $post) :
+              setup_postdata($post); ?>
+                <article class="location__teaser">
+                    <?php
+                    $image_classes = 'location__teaser--featured-image';
 
-        if (has_post_thumbnail()) {
-          the_post_thumbnail('large', array('class' => $image_classes));
-        } else {
-          echo wp_get_attachment_image(206, 'large', false, array('class' => $image_classes));
-        }
-        ?>
+                    if (has_post_thumbnail()) {
+                      the_post_thumbnail('large', array('class' => $image_classes));
+                    } else {
+                      echo wp_get_attachment_image(206, 'large', false, array('class' => $image_classes));
+                    }
+                    ?>
+                    <h3 class="location__teaser--title">
+                      <span class="location__teaser--link" href=""><?php the_title(); ?></span>
+                    </h3>
+                  <div class="location__teaser--body">
+                      <?php echo apply_filters('the_content', $post->post_content); ?>
+                  </div>
+                </article>
+              <?php
+              endforeach;
+              wp_reset_postdata();
+              ?>
+          </div>
 
       </div>
   </div>

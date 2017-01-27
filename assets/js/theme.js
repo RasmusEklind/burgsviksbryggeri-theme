@@ -35,6 +35,4 @@ $('.readmore--text').click(function () {
         $('.top__navigation').toggleClass('light');
       }
   });
-
-
 });

@@ -4,7 +4,10 @@
   @include rem-fallback(padding-right, 15);
   @include rem-fallback(padding-bottom, 45);
   @include rem-fallback(padding-left, 15);
-
+  &--campaign {
+    margin-top: 0;
+    background-color: #222;
+  }
   &--contact {
     @include rem-fallback(padding-top, 100);
   }
@@ -32,6 +35,9 @@
   }
 
   &--location {
+    max-width: $max-width-medium;
+  }
+  &--campaign {
     max-width: $max-width-medium;
   }
 
