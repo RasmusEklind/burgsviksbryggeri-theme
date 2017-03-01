@@ -29,6 +29,20 @@
   .section--location--content {
     @include rem-fallback(margin-top, 50);
   }
+
+  .location__teaser {
+    margin-right: 0;
+    vertical-align: top;
+    display: inline-block;
+    width: 49%;
+
+    &:nth-of-type(even) {
+      @include rem-fallback(margin-right, 0);
+    }
+    &:nth-of-type(-n+2) {
+      @include rem-fallback(margin-bottom, 15);
+    }
+  }
 }
 
 @media only screen and (min-width: $mq-large) {
@@ -46,5 +60,19 @@
   }
   .location__featured-image {
     @include rem-fallback(width, 400);
+  }
+
+  .location__teaser {
+    margin-right: 0%;
+    vertical-align: top;
+    display: inline-block;
+    width: 33%;
+
+    &:nth-of-type(even) {
+      // @include rem-fallback(margin-right, 0);
+    }
+    &:nth-of-type(-n+2) {
+      @include rem-fallback(margin-bottom, 15);
+    }
   }
 }
