@@ -17,6 +17,7 @@
 </div>
 </footer>
 <script src="<?php echo get_template_directory_uri() . '/assets/js/theme.min.js'; ?>"></script>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQKSvb4EDDQlZ3zzS807qeKb44aYWOE8g&callback=initMap"
     async defer></script>
     <script>

@@ -15,7 +15,7 @@ if ($nav != false): $links = wp_get_nav_menu_items($nav->term_id); ?>
       <?php foreach ($links as $key => $link): $url = apply_filters('the_permalink', $link->url); ?>
     <ul class="nav__list">
         <li class="nav__list--item nostylelist">
-          <a class="nav__list--link nostylelink" href="<?php echo $url; ?>"><?php echo $link->title; ?></a>
+          <a class="nav__list--link nostylelink" data-scroll href="<?php echo $url; ?>"><?php echo $link->title; ?></a>
         </li>
       <?php endforeach; ?>
     </ul>

@@ -6,6 +6,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 src: [
+                    'assets/js/smoothscroll.js',
                     'node_modules/jquery/dist/jquery.min.js',
                     'node_modules/jquery-color-animation/jquery.animate-colors-min.js',
                     'assets/js/googlemap.js',

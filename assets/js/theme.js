@@ -36,3 +36,7 @@ $('.readmore--text').click(function () {
       }
   });
 });
+
+
+//smooth scroll initiate.
+smoothScroll.init();
