@@ -34,7 +34,7 @@
     margin-right: 0;
     vertical-align: top;
     display: inline-block;
-    width: 49%;
+    width: 49.5%;
 
     &:nth-of-type(even) {
       @include rem-fallback(margin-right, 0);
