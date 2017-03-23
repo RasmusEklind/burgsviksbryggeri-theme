@@ -14,7 +14,7 @@
         </div>
         <div class="section--content--locations">
               <?php
-              $posts = get_posts(array('category' => 5, 'posts_per_page' => 10));
+              $posts = get_posts(array('category' => 8, 'posts_per_page' => 10));
               foreach ($posts as $post) :
               setup_postdata($post); ?>
                 <article class="location__teaser">
