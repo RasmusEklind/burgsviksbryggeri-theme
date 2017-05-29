@@ -65,11 +65,11 @@
 
     &:hover:after {
       opacity: 1;
-      background-color: $color-blue-blue;
+      background-color: $color-black-black;
     }
 
     &:active:after {
-      background-color: lighten($color-blue-blue, 10%);
+      background-color: lighten($color-black-black, 10%);
     }
 
     &:after {
@@ -119,11 +119,11 @@
 
   &:hover {
     color: $color-white-white;
-    background-color: $color-blue-blue;
-    border-color: $color-blue-blue;
+    background-color: $color-black-black;
+    border-color: $color-black-black;
   }
   &:active {
-    background-color: lighten($color-blue-blue, 10%);
+    background-color: lighten($color-black-black, 10%);
     color: $color-white-white;
   }
 }

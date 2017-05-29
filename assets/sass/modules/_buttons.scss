@@ -24,12 +24,12 @@
 
   &:hover {
     color: $color-white-white;
-    background-color: $color-blue-blue;
-    border-color: $color-blue-blue;
+    background-color: $color-black-black;
+    border-color: $color-black-black;
     cursor: pointer;
   }
   &:active {
-    background-color: lighten($color-blue-blue, 10%);
+    background-color: lighten($color-black-black, 10%);
   }
 }
 

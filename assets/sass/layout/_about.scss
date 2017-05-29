@@ -5,9 +5,9 @@
   font-family: $font-n3-family;
 
   .active {
-    border-color: lighten($color-blue-blue, 10%);
+    border-color: lighten($color-black-black, 10%);
     color: $color-white-white;
-    background-color: lighten($color-blue-blue, 10%);
+    background-color: lighten($color-black-black, 10%);
   }
 
   .open {
