@@ -6,7 +6,7 @@ files:
   - source: /
     destination: /home/bitnami/apps/wordpress/htdocs/wp-content/themes
 permissions:
-   - object: /var/www/html
+   - object: /home/bitnami/apps/wordpress/htdocs/wp-content/themes
      pattern: "**"
      mode: 755
      type:
