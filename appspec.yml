@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/bitnami/apps/wordpress/htdocs/wp-content/
+    destination: /home/bitnami/apps/wordpress/htdocs/wp-content/themes/burgsviksbryggeri-theme
 permissions:
-   - object: /home/bitnami/apps/wordpress/htdocs/wp-content/
+   - object: /home/bitnami/apps/wordpress/htdocs/wp-content/themes/burgsviksbryggeri-theme
      pattern: "**"
