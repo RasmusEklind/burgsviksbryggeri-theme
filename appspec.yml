@@ -3,11 +3,6 @@ os: linux
 files:
   - source: /
     destination: /home/bitnami/apps/wordpress/htdocs/wp-content/themes
-  - source: /
-    destination: /home/bitnami/apps/wordpress/htdocs/wp-content/themes
 permissions:
    - object: /home/bitnami/apps/wordpress/htdocs/wp-content/themes
      pattern: "**"
-     mode: 755
-     type:
-       - file
