@@ -1,35 +1,36 @@
-<section class="section section--products">
-  <span class="a11y-accesskeys-span" id="products" tabindex="-1"></span>
+<div class="section section--products">
+  <span class="a11y-accesskeys-span" tabindex="-1"></span>
   <div class="section__content section__content--products">
-    <h2 class="section__heading section__heading--products">Ölsorter</h2>
-    <div class="section--content--products">
+      <div class="header--wrapper">
+        <h2 class="section__heading--products">VÅRA ÖL</h2>
+        <h4 class="product__excerpt -entry">Vi jobbar ständigt med att ta fram nya sorter, men då vi sätter kvaliteten högst så skyndar vi
+långsamt.</h3>
+      </div>
+      <div class="section--content--products">
+        <ul class="product_list -entry">
           <?php
-          $posts = get_posts(array('category' => 1, 'posts_per_page' => 11));
+          $posts = get_posts(array( 'numberposts' => 10, 'post_type' => 'beer'));
           foreach ($posts as $post) :
-          setup_postdata($post); ?>
-            <article class="product__teaser">
-              <div class="relative-div">
-                <?php
-                $image_classes = 'product__teaser--featured-image';
+            setup_postdata($post);
+            $postID = $post->ID;
 
-                if (has_post_thumbnail()) {
-                  the_post_thumbnail('large', array('class' => $image_classes));
-                } else {
-                  echo wp_get_attachment_image(206, 'large', false, array('class' => $image_classes));
-                }
-                ?>
-                <h3 class="product__teaser--title">
-                  <span class="product__teaser--link" href=""><?php the_title(); ?></span>
-                </h3>
-              </div>
-              <div class="product__teaser--body">
-                  <?php echo apply_filters('the_content', $post->post_content); ?>
-              </div>
-            </article>
-          <?php
+            $color = get_post_meta($postID, 'beer_colorpicker', true); ?>
+            <style media="screen">
+            .product__id--<?php echo $postID ?> {
+                color: <?php echo $color ?>
+            }
+            </style>
+            <li class="product__teaser--title nostylelist">
+              <a class="product__teaser--link nostylelink product__id--<?php echo $postID ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </li>
+            <?php
           endforeach;
           wp_reset_postdata();
           ?>
+        </ul>
+        <div class="products__image">
+
+        </div>
       </div>
-  </div>
-</section>
+    </div>
+</div>

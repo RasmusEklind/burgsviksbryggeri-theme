@@ -1,83 +1,112 @@
-.section--contact--content {
-  @include rem-fallback(margin-top, 24);
+.section--contact {
+    background: #fff;
 }
 
 .section__content--contact {
-  color: $color-white-white;
+    color: #444;
+    display: grid;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    text-align: center;
 }
+
 .section__heading--contact {
-  color: $color-white-white;
-
-  &:after {
-    opacity: 1;
-    background-color: $color-white-white;
-  }
+    font-family: $font-n1-family;
+    margin: 0 auto 15px;
+    text-align: center;
+    color: #444;
 }
 
-.contact--address {
-  @include font-size(20);
-  font-weight: bold;
-  @include rem-fallback(padding-bottom, 50);
+.section--contact--contact {
+    padding-bottom: 25px;
 }
 
-.contact--icons {
-  margin: 0 auto;
-  @include font-size(20);
-  font-weight: bold;
-  @include rem-fallback(max-width, 330);
-  @include rem-fallback(padding-top, 50);
-  @include rem-fallback(padding-left, 50);
+.contact--icons--list {
+    padding-bottom: 25px;
 }
+
 .contact--map {
-  @include rem-fallback(height, 400);
+    height: 500px;
 }
+
 .contact--icons--item {
-  padding-left: 0;
-  @include rem-fallback(margin-bottom, 25);
-  display: inline-block;
+    &:before {
+        padding-right: 8px;
+    }
 
-  &:before {
-    margin-left: 0;
-    @include font-size(52);
-  }
-
-  &:active {
-    color: darken($color-white-white, 15%);
-  }
+    &:active {
+        color: darken($color-white-white, 15%);
+    }
 }
+
 .contact--icons--link {
-  text-decoration: none;
-  &:focus,
-  &:active,
-  &:hover {
-    text-decoration: underline;
-  }
+    text-decoration: none;
 }
+@media only screen and (min-width: 512px) {
+    .section__content--contact {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-@media only screen and (min-width: $mq-medium) {
+    .contact--map {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: inline-block;
+        @include rem-fallback(padding-bottom, 40);
+    }
 
-.section--contact--content {
-  @include rem-fallback(margin-top, 50);
-}
+    .section__content--adress {
+        grid-column-end: 3;
+    }
 
-.contact--icons--item {
-  display: list-item;
-}
+    .section--contact--contact {
+        padding: 25px;
+    }
 
-.contact--address {
-  vertical-align: top;
-  width: 49%;
-  display: inline-block;
+    .section--contact--adress {
+        border-left: 3px solid #444;
+        padding: 25px;
+        margin-bottom: 25px;
+    }
 }
-.contact--map {
-  width: 49.5%;
-  display: inline-block;
-  @include rem-fallback(padding-bottom, 40);
+@media only screen and (min-width: 600px) {
+    .section__content--contact {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin: 0 auto;
+        text-align: center;
+    }
 
+    .contact--map {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: inline-block;
+        @include rem-fallback(padding-bottom, 40);
+    }
+
+    .section__content--adress {
+        grid-column-end: 3;
+    }
+
+    .section--contact--contact {
+        padding: 50px;
+    }
+
+    .section--contact--adress {
+        border-left: 3px solid #444;
+        padding: 50px;
+        margin-bottom: 50px;
+    }
 }
-}
-@media only screen and (min-width: $mq-large) {
-  .section--contact--content {
-    @include rem-fallback(margin-top, 80);
-  }
+@media only screen and (min-width: 768px) {
+    .section__content--contact {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 0 auto;
+        text-align: center;
+    }
 }

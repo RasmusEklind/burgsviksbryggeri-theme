@@ -1,4 +1,4 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
     grunt.initConfig({
         concat: {
             options: {
@@ -6,34 +6,29 @@ module.exports = function (grunt) {
             },
             dist: {
                 src: [
-                    'assets/js/smoothscroll.js',
-                    'node_modules/jquery/dist/jquery.min.js',
-                    'node_modules/jquery-color-animation/jquery.animate-colors-min.js',
-                    'assets/js/googlemap.js',
-                    'assets/js/campaign.js',
-                    'assets/js/theme.js'
+                    'assets/js/*.js'
                 ],
-                dest: 'assets/js/theme.min.js'
+                dest: 'assets/dist/js/theme.min.js'
             }
         },
         sass: {
-          dist: {
-            options: {
-              style: 'compressed'
-            },
-            files: [{
-              expand: true,
-              cwd: 'assets/sass',
-              src: ['*.scss'],
-              dest: 'assets/css',
-              ext: '.css'
-            }]
-          }
+            dist: {
+                options: {
+                    style: 'compressed'
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'assets/sass',
+                    src: ['*.scss'],
+                    dest: 'assets/css',
+                    ext: '.css'
+                }]
+            }
         },
         uglify: {
             dist: {
                 files: {
-                    'assets/js/theme.min.js': ['assets/js/theme.min.js']
+                    'assets/dist/js/theme.min.js': ['assets/dist/js/theme.min.js']
                 }
             }
         },
@@ -46,7 +41,7 @@ module.exports = function (grunt) {
             },
             js: {
                 files: [
-                    'assets/js/theme.js'
+                    'assets/js/*.js'
                 ],
                 tasks: ['concat', 'uglify']
             }

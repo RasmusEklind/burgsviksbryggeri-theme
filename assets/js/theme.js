@@ -1,42 +1,55 @@
+$(document).ready(function() {
 
-//ClassToggle for Navigation
-$(document).ready(function () {
 
-$('#nav-toggle').click(function() {
-   $(this).toggleClass('active');
-   $('#overlay').toggleClass('open');
-  });
-//readmore toggle
-  $('#readmore').click(function() {
-     $(this).toggleClass('active');
-     $('#extendedcontent').toggleClass('open');
+    (function($) {
+
+        /**
+         * Copyright 2012, Digital Fusion
+         * Licensed under the MIT license.
+         * http://teamdf.com/jquery-plugins/license/
+         *
+         * @author Sam Sehnert
+         * @desc A small plugin that checks whether elements are within
+         *     the user visible viewport of a web browser.
+         *     only accounts for vertical position, not horizontal.
+         */
+
+        $.fn.visible = function(partial) {
+
+            var $t = $(this),
+                $w = $(window),
+                viewTop = $w.scrollTop(),
+                viewBottom = viewTop + $w.height(),
+                _top = $t.offset().top,
+                _bottom = _top + $t.height(),
+                compareTop = partial === true ? _bottom : _top,
+                compareBottom = partial === true ? _top : _bottom;
+
+            return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+        };
+
+    })(jQuery);
+
+    var win = $(window);
+
+    var allMods = $(".products-grid--item");
+
+    allMods.each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            el.addClass("already-visible");
+        }
     });
 
-//readmore // read less
-$('.readmore--text').click(function () {
-    var oldText = $(this).text();
-    var newText = $(this).data('text');
-    $(this).text(newText).data('text',oldText);
-});
+    win.scroll(function(event) {
 
-  $('.nav__list--link').click(function() {
-     $(this).toggleClass('active');
-     $('#overlay').toggleClass('open');
+        allMods.each(function(i, el) {
+            var el = $(el);
+            if (el.visible(true)) {
+                el.addClass("come-in");
+            }
+        });
+
     });
-
-
-  var targetOffset1 = $("#about").offset().top;
-
-  var $w = $(window).scroll(function(){
-      if ( $w.scrollTop() > targetOffset1 ) {
-        $('.top__navigation').toggleClass('dark');
-
-      } else {
-        $('.top__navigation').toggleClass('light');
-      }
-  });
 });
-
-
-//smooth scroll initiate.
-smoothScroll.init();

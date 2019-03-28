@@ -1,93 +1,116 @@
-.main--header {
-  height: $max-height-100;
-  position: relative;
-  overflow: hidden;
-  background: url("../img/burgsviksbryggeri-header-mobile.jpg") center no-repeat;
-  background-size: cover;
-}
+// .main--header {
+//     &.startpage {
+//         height: $max-height-100;
+//         position: relative;
+//         overflow: hidden;
+//         background: url("../img/burgsviksbryggeri-header-mobile.jpg") center no-repeat;
+//         background-size: cover;
+//     }
+// }
+
 .dark {
-  background-color: $color-dark-grey;
+    background-color: $color-dark-grey;
 }
+
 .light {
-  background-color: $color-white-white;
+    background-color: $color-white-white;
 }
 
 .top__navigation {
-  background-color: $color-white-white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: background-color .25s ease;
-  @include rem-fallback(height, 70);
-  z-index: 2;
+    background-color: $color-white-white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.25s ease;
+    @include rem-fallback(min-height, 70);
+    z-index: 2;
+    box-shadow: 1px 1px 1px #f1f1f1;
 
-  &--logo {
-  background-color: $color-white-white;
-  position: fixed;
-  top: 0%;
-  left: 3%;
-  display: inline-block;
-  }
+    &--logo {
+        background-color: $color-white-white;
+        position: fixed;
+        top: 0;
+        left: 3%;
+        display: inline-block;
+    }
 
-  &--image {
-    @include rem-fallback(margin-top, 8);
-    @include rem-fallback(max-height, 50);
-  }
+    &--image {
+        max-width: 65px;
+        margin: 0 15px 0 0;
+        vertical-align: middle;
+    }
 
+    &--name {
+        color: #000;
+        text-align: center;
+        margin: 30px auto;
+        display: inline-block;
+    }
 }
+
 .top--arrow {
-position: absolute;
-display: inline-block;
-bottom: 1%;
-left: 50%;
--webkit-transform: translateX(-50%) translateY(-50%);
--ms-transform: translateX(-50%) translateY(-50%);
-transform: translateX(-50%) translateY(-50%);
-border: 2px solid $color-dark-grey;
-background-color: $color-white-white;
-@include font-size(24);
-
+    position: absolute;
+    display: inline-block;
+    bottom: 1%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    border: 2px solid $color-dark-grey;
+    background-color: $color-white-white;
+    @include font-size(24);
 }
-
+@media only screen and (min-width: 768px) {
+    // .top__navigation--logo {
+    //     left: 0;
+    //     margin: 0 auto;
+    //     display: block;
+    //     max-width: 460px;
+    //     text-align: center;
+    //     position: relative;
+    // }
+}
 @media only screen and (min-width: $mq-medium) {
-
-  .main--header {
-    background: url("../img/burgsviksbryggeri-header-medium.jpg") center no-repeat;
-    background-size: cover;
-    // height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+    // .main--header {
+    //     &.startpage {
+    //         background: url("../img/burgsviksbryggeri-header-medium.jpg") center no-repeat;
+    //         background-size: cover;
+    //         // height: 100%;
+    //         background-attachment: fixed;
+    //         background-position: center;
+    //         background-repeat: no-repeat;
+    //     }
+    // }
 }
-
 @media only screen and (min-width: $mq-large) {
-.top__navigation {
-  @include rem-fallback(height, 100);
-
-  &--image {
-    @include rem-fallback(margin-top, 15);
-    @include rem-fallback(max-height, 70);
-  }
-}
-  .main--header {
-    background: url("../img/burgsviksbryggeri-header-large.jpg") center no-repeat;
-    background-size: cover;
-    // height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+    .top__navigation {
+        // @include rem-fallback(height, 100);
+        &--image {
+            // @include rem-fallback(margin-top, 30);
+            // @include rem-fallback(max-height, 190);
+        }
+    }
+    // .main--header {
+    //     &.startpage {
+    //         background: url("../img/burgsviksbryggeri-header-large.jpg") center no-repeat;
+    //         background-size: cover;
+    //         // height: 100%;
+    //         background-attachment: fixed;
+    //         background-position: center;
+    //         background-repeat: no-repeat;
+    //     }
+    // }
 }
 @media only screen and (min-width: $mq-xlarge) {
-
-  .main--header {
-    background: url("../img/burgsviksbryggeri-header-xlarge.jpg") center no-repeat;
-    background-size: cover;
-    // height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+    // .main--header {
+    //     &.startpage {
+    //         background: url("../img/burgsviksbryggeri-header-xlarge.jpg") center no-repeat;
+    //         background-size: cover;
+    //         // height: 100%;
+    //         background-attachment: fixed;
+    //         background-position: center;
+    //         background-repeat: no-repeat;
+    //     }
+    // }
 }

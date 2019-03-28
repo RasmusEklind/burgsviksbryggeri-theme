@@ -1,0 +1,125 @@
+%!Adobe-FontList 1.19
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:AmericanTypewriter-Medium
+OutlineFileName:\AmericanTypewriter-Medium
+ResourceID:14987
+MacStyle:0
+FileLength:29550
+FileModTime:1505487149
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AmericanTypewriter-Medium
+FamilyName:ITC American Typewriter
+StyleName:Medium
+MenuName:AmericanTypewriter Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:ITC American Typewriter Medium
+WritingScript:Roman
+OutlineFileName:\AmeriTypMed
+DataFormat:POSTResource
+UsesStandardEncoding:yes
+isCFF:no
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:52884
+FileModTime:855162537
+DesignSize:-1
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:BrandonGrotesque-Bold
+FamilyName:Brandon Grotesque
+StyleName:Bold
+MenuName:Brandon Grotesque Bold
+StyleBits:0
+WeightClass:450
+WidthClass:5
+AngleClass:0
+FullName:Brandon Grotesque Bold
+WritingScript:Roman
+OutlineFileName:\Brandon_bld.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:89928
+FileModTime:1321960364
+NameArray:0,Mac,4,Brandon Grotesque Bold
+NameArray:0,Win,1,Brandon Grotesque Bold
+NameArray:0,Win,16,Brandon Grotesque
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:CenturySchoolbook-Bold
+FamilyName:Century Schoolbook
+StyleName:Bold
+MenuName:Century Schoolbook
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Century Schoolbook Bold
+WritingScript:Roman
+OutlineFileName:\CenturySchoolbook-Bold
+DataFormat:sfntResource
+ResourceID:5031
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:78494
+FileModTime:1493988198
+NameArray:0,Mac,4,Century Schoolbook Bold
+NameArray:0,Win,1,Century Schoolbook
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:CenturySchoolbook-Bold
+OutlineFileName:\CenturySchoolbook-Bold
+ResourceID:2008
+MacStyle:0
+FileLength:78494
+FileModTime:1493988198
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:218640
+FileModTime:1395313877
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+

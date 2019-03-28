@@ -1,0 +1,24 @@
+.top__navigation {
+    .nav__desktop {
+        &--item {
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .top__navigation {
+        .nav__desktop {
+            display: block;
+            margin: 0 auto;
+            // max-width: 706px;
+            // text-align: center;
+            &--item {
+                display: inline-block;
+                margin-right: 15px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

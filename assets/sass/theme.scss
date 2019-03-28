@@ -1,24 +1,243 @@
 //Base
 @import 'base/variables';
+@import "base/mixin-breakpoint";
 @import "base/functions";
 @import "base/mixins";
 @import "base/font";
 @import 'base/base';
 @import "base/fontello";
-
-//Layout
+@import "base/grid"; //Layout
 @import "layout/header";
 @import "layout/contact";
 @import "layout/about";
 @import "layout/location";
+@import "layout/products-grid";
 @import "layout/products";
+@import "layout/brewery";
 @import "layout/section";
-@import "layout/footer";
-@import "layout/thebar";
-@import "layout/nav";
-@import "layout/decoration";
+@import "layout/footer"; // @import "layout/thebar";
+@import "layout/nav"; // @import "layout/decoration";
 @import "layout/about-single";
-
-//Modules
+@import "layout/desktop-nav";
+@import "layout/single";
+@import "layout/post-type-beer"; //Modules
 @import "modules/buttons";
 @import "modules/countdown";
+@import "externals/mobile-nav"; // .startpage-overlay {
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     background-color: #f7f4f4;
+//     z-index: 999;
+//     width: 100%;
+//     opacity: 1;
+//     display: block;
+// }
+//
+// #hidden {
+//     animation: signup-response 0.5s 1;
+//     -webkit-animation: signup-response 0.5s 1;
+//     animation-fill-mode: forwards;
+//     animation-delay: 2s;
+//     -webkit-animation-delay: 1s;
+//     /* Safari and Chrome */
+//     -webkit-animation-fill-mode: forwards;
+// }
+@keyframes hidden {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes hidden {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.section__content--brewery {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-right: 15px;
+}
+
+.section__content--products {
+    margin-bottom: 25px;
+}
+
+.article--wrapper {
+    .-entry {
+        padding: 0;
+    }
+}
+
+.product--list {
+    margin-top: 80px;
+}
+
+.product-grid--image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.products-grid--amount {
+    display: block;
+}
+
+.eu--image {
+    height: auto;
+    width: 160px;
+}
+
+.product-grid--content {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.section--products-grid {
+    margin-bottom: 160px;
+}
+
+.product-grid--list {
+    max-width: 1800px;
+    margin: 15px auto;
+    display: grid;
+    grid-auto-rows: 240px;
+    grid-template-columns: auto auto;
+    gap: 80px 15px;
+}
+
+.contact--address,
+.contact--icons--item {
+    font-size: 20px;
+}
+
+.top__navigation--image {
+    max-width: 55px;
+    margin: 0 15px 0 0;
+    vertical-align: middle;
+}
+
+.top__navigation--link {
+    float: left;
+    padding: 0 0 15px 15px;
+}
+
+.top__navigation .nav__desktop--item {
+    display: inline-block;
+    margin: 10px 8px;
+    font-size: 12px;
+}
+
+.brewery--article {
+    p {
+        margin-bottom: 15px;
+    }
+}
+////
+
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.5s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+    animation-duration: 0.3s;
+}
+
+.already-visible {
+    transform: translateY(0);
+    animation: none;
+}
+@keyframes come-in {
+    to {
+        transform: translateY(0);
+    }
+}
+//////
+@media only screen and (min-width: 600px) {
+    .top__navigation .nav__desktop--item {
+        margin: 12px 25px;
+        font-size: 16px;
+    }
+
+    .top__navigation--image {
+        max-width: 65px;
+        margin: 0 35px 0 0;
+    }
+
+    .product-grid--list {
+        grid-auto-rows: 350px;
+    }
+
+    .product-grid--list {
+        gap: 100px 25px;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .product-grid--list {
+        grid-auto-rows: 450px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .top__navigation--image {
+        max-width: 80px;
+        margin: 15px 35px 0 15px;
+        vertical-align: middle;
+    }
+
+    .top__navigation .nav__desktop--item {
+        display: inline-block;
+        margin: 31px 80px 25px 15px;
+    }
+
+    .product-grid--list {
+        grid-auto-rows: 500px;
+    }
+
+    .section__content--brewery {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        -ms-transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-50%);
+        padding-right: 15px;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .product-grid--list {
+        grid-template-columns: auto auto auto;
+        grid-auto-rows: 350px;
+    }
+
+    .product-grid--list {
+        gap: 150px 50px;
+    }
+
+    .contact--address,
+    .contact--icons--item {
+        font-size: 24px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .product-grid--list {
+        grid-template-columns: auto auto auto;
+        grid-auto-rows: 45vh;
+    }
+}

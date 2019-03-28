@@ -1,115 +1,15 @@
 .section {
-  position: relative;
-  @include rem-fallback(padding-top, 30);
-  @include rem-fallback(padding-right, 15);
-  @include rem-fallback(padding-bottom, 45);
-  @include rem-fallback(padding-left, 15);
-  &--campaign {
-    margin-top: 0;
-    background-color: #222;
-  }
-  &--contact {
-    @include rem-fallback(padding-top, 100);
-  }
-
-  &--thebar {
-    @include rem-fallback(padding-bottom, 15);
-  }
-}
-
-.section--products {
-  @include rem-fallback(padding-right, 0);
-  @include rem-fallback(padding-left, 0);
+    position: relative;
 }
 
 .section__content {
-  @extend %clearfix;
-  @extend %container;
-
-  &--products {
-  max-width: $max-width-xlarge;
-  @include rem-fallback(padding-bottom, 0);
-  @include rem-fallback(padding-left, 15);
-  @include rem-fallback(padding-right, 15);
-  @include rem-fallback(padding-top, 0);
-  }
-
-  &--location {
-    max-width: $max-width-medium;
-  }
-  &--campaign {
-    max-width: $max-width-medium;
-  }
-
-  &--about {
-    max-width: $max-width-medium;
-
-  }
-
-  &--thebar {
-    max-width: $max-width-medium;
-  }
-
-  &--contact {
-    max-width: $max-width-large;
-  }
+    @extend %clearfix;
+    // @extend %container;
 }
-
-
-.section__heading {
-  @extend %underline-black;
-  @include rem-fallback(margin-bottom, 50);
-  text-transform: uppercase;
-  max-width: $max-width-medium;
-  margin: 0 auto;
-}
-
-.section--contact {
-  background-color: $color-black-black;
-}
-
 @media only screen and (min-width: $mq-medium) {
-
-  .section__heading {
-    text-align: left;
-  }
-
-  .section {
-    @include rem-fallback(margin-top, 80);
-
-    &--thebar {
-      padding: 0;
+    .section__heading {
+        text-align: center;
+        // margin-bottom: 30px;
     }
-
-    &--contact {
-      margin-top: 0;
-    }
-  }
-
-  .section__content {
-
-    &--thebar {
-      padding-left: 15px;
-      padding-right: 15px;    }
-  }
-
-  }
-
-@media only screen and (min-width: $mq-large) {
-
-  .section__content {
-
-    &--thebar {
-    //  box-shadow: 3px 4px 10px $color-dark-grey;
-    //  @include rem-fallback(margin-top, 0);
-    }
-  }
-
-  .section {
-    @include rem-fallback(margin-top, 120);
-
-    &--contact {
-      margin-top: 0;
-    }
-  }
 }
+@media only screen and (min-width: $mq-large) {}

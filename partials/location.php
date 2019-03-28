@@ -1,4 +1,4 @@
-<section class="section section--location">
+<section class="slide section section--location">
   <span class="a11y-accesskeys-span" id="location" tabindex="-1"></span>
   <div class="section__content section__content--location">
     <?php $post = get_post(17); ?>
@@ -8,7 +8,7 @@
         <div class="section--location--quote">
         <?php
         if (has_excerpt()) {
-          echo the_excerpt();
+            echo the_excerpt();
         }
         ?>
         </div>
@@ -22,9 +22,9 @@
                     $image_classes = 'location__teaser--featured-image';
 
                     if (has_post_thumbnail()) {
-                      the_post_thumbnail('large', array('class' => $image_classes));
+                        the_post_thumbnail('large', array('class' => $image_classes));
                     } else {
-                      echo wp_get_attachment_image(206, 'large', false, array('class' => $image_classes));
+                        echo wp_get_attachment_image(206, 'large', false, array('class' => $image_classes));
                     }
                     ?>
                     <h3 class="location__teaser--title">

@@ -2,7 +2,9 @@
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
-		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
+		<title><?php wp_title(''); ?><?php if (wp_title('', false)) {
+    echo ' :';
+} ?> <?php bloginfo('name'); ?></title>
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/img/ico-logo-1000px.ico" rel="shortcut icon">
     <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
@@ -15,15 +17,47 @@
 		<meta property=”og:url” content=”http://burgsviksbryggeri.se”/>
 		<meta property="og:locale" content="sv_SE">
 		<meta property="og:type" content="website">
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+
+
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/theme.css'; ?>">
 			<?php
-			 wp_head();
-			 ?>
+             wp_head();
+             ?>
 	</head>
-	<body>
-			<header class="main--header header clear" role="banner">
-				<?php get_template_part('partials/nav'); ?>
-				<!-- <div class="section__content section__content--logo">
-					<a class="top--arrow icon-down-open nostylelink" href="#campaign"></a>
-				</div> -->
+	<body class="c-grid">
+		<?php if (is_home()) {
+                 ?>
+
+            <div id="hidden" class="startpage-overlay">
+
+            </div>
+            <?php
+                 $ishome = 'startpage';
+             } ?>
+			<header class="main--header header clear <?php echo $ishome; ?>" role="banner">
+                <div class="top__navigation">
+
+
+                  <?php
+                  $nav = wp_get_nav_menu_object('Main menu');
+                  if ($nav != false): $links = wp_get_nav_menu_items($nav->term_id);
+
+                  ?>
+
+                  <ul class="nav__desktop">
+                      <a class="top__navigation--link" href="/">
+                        <img class="top__navigation--image" src="<?php echo get_template_directory_uri(); ?>/assets/img/top-logo.png" alt="Burgsviksbryggeri"/></a>
+                    <?php   foreach ($links as $key => $link): $url = apply_filters('the_permalink', $link->url); ?>
+                    <li class="nav__desktop--item nostylelist">
+                      <a class="nav__desktop--link nostylelink" data-scroll href="<?php echo $url; ?>"><?php echo $link->title; ?></a>
+                    </li>
+                  <?php endforeach; ?>
+                </ul>
+
+                <?php endif; ?>
+                    </div>
 			</header>

@@ -1,100 +1,94 @@
 .section__content--thebar {
-  display: inline-block;
-  font-family: $font-n3-family;
-  @include rem-fallback(padding-bottom, 0);
-  @include rem-fallback(padding-top, 0);
+    display: inline-block;
+    font-family: $font-n3-family;
+    @include rem-fallback(padding-bottom, 0);
+    @include rem-fallback(padding-top, 0);
 }
 
 .section--content--thebar {
-  @include rem-fallback(margin-top, 24);
-  @include rem-fallback(margin-bottom, 24);
-
+    @include rem-fallback(margin-top, 24);
+    @include rem-fallback(margin-bottom, 24);
 }
 
 .section__heading--thebar {
-  @include rem-fallback(padding-top, 30);
+    @include rem-fallback(padding-top, 30);
 
-  &:after {
-    opacity: 0.2;
-    background-color: $color-black-black;
-  }
+    &:after {
+        opacity: 0.2;
+        background-color: $color-black-black;
+    }
 }
 
 .thebar__teaser--body {
-  @include font-size(20);
+    @include font-size(20);
 }
 
 .thebar__featured-image {
-  height: 100%;
-  vertical-align: bottom;
+    height: 100%;
+    vertical-align: bottom;
 }
 @media only screen and (min-width: 768px) {
+    .section__content--thebar {
+        vertical-align: top;
+        display: inline-block;
+        width: 51%;
+        @include rem-fallback(padding, 30);
+        background-color: $color-white-white;
+    }
 
-  .section__content--thebar {
-    vertical-align: top;
-    display: inline-block;
-    width: 51%;
-    @include rem-fallback(padding, 30);
+    .section--content--thebar {
+        @include rem-fallback(margin-top, 50);
+    }
 
-    background-color: $color-white-white;
-  }
-
-  .section--content--thebar {
-    @include rem-fallback(margin-top, 50);
-  }
-
-  .thebar__teaser--body {
-    @include rem-fallback(margin-bottom, 20);
-    vertical-align: top;
-  }
+    .thebar__teaser--body {
+        @include rem-fallback(margin-bottom, 20);
+        vertical-align: top;
+    }
 }
 @media only screen and (min-width: 992px) {
+    .section__content--thebar {
+        @include rem-fallback(margin-left, -80);
+        @include rem-fallback(margin-top, -80);
+        @include rem-fallback(padding-left, 100);
+        @include rem-fallback(padding-right, 50);
+        @include rem-fallback(padding-top, 50);
+        @include rem-fallback(padding-bottom, 50);
+        transform: rotate(-6deg);
+        height: 105%;
+        position: absolute;
+    }
 
-  .section__content--thebar {
-    @include rem-fallback(margin-left, -80);
-    @include rem-fallback(margin-top, -80);
-    @include rem-fallback(padding-left, 100);
-    @include rem-fallback(padding-right, 50);
-    @include rem-fallback(padding-top, 50);
-    @include rem-fallback(padding-bottom, 50);
-    transform:rotate(-6deg);
-    height: 105%;
-    position: absolute;
-  }
-  .section__heading--thebar {
-    transform:rotate(6deg);
-    @include rem-fallback(margin-left, 50);
-  }
-  .thebar__teaser--body {
-    transform:rotate(6deg);
+    .section__heading--thebar {
+        transform: rotate(6deg);
+        @include rem-fallback(margin-left, 50);
+    }
 
-    @include font-size(20);
-    text-align: inherit;
-  }
-
+    .thebar__teaser--body {
+        transform: rotate(6deg);
+        @include font-size(20);
+        text-align: inherit;
+    }
 }
 @media only screen and (min-width: $mq-large) {
+    .section--content--thebar {
+        @include rem-fallback(margin-top, 80);
+    }
 
-  .section--content--thebar {
-    @include rem-fallback(margin-top, 80);
+    .section__heading--thebar {
+        transform: rotate(6deg);
+        @include rem-fallback(margin-left, 50);
+    }
 
-  }
-  .section__heading--thebar {
-    transform:rotate(6deg);
-    @include rem-fallback(margin-left, 50);
-  }
+    .thebar__teaser--body {
+        transform: rotate(6deg);
+        @include font-size(24);
+        text-align: inherit;
+    }
 
-  .thebar__teaser--body {
-    transform:rotate(6deg);
-
-    @include font-size(24);
-    text-align: inherit;
-  }
-
-  .thebar__featured-image {
-    vertical-align: top;
-    @include rem-fallback(padding-left, 15);
-    display: inline-block;
-    width: 50%;
-  }
+    .thebar__featured-image {
+        vertical-align: top;
+        @include rem-fallback(padding-left, 15);
+        display: inline-block;
+        width: 50%;
+    }
 }
