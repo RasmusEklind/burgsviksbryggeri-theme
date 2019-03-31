@@ -3,7 +3,7 @@
     <div class="about--wrapper -entry">
         <h1 class="header">BURGSVIKS BRYGGERI</h1>
         <h3 class="entry">Vi är ett bryggeri från Burgsvik på södra Gotland. Vi har valt att ge våra ölsorter rena och tydliga
-namn. Det behövs inga avancerade och omständiga namn för att presentera god öl. Vårt syfte är just
+namn. Det behövs inga avancerade och omständliga namn för att presentera god öl. Vårt syfte är just
 precis det, att göra god öl som vi själva tycker om och som vi hoppas att ni vill prova.</h3>
     </div>
 
