@@ -10,6 +10,7 @@
     font-family: "GrotesqueFont";
     display: inline-block;
     color: #444444;
+    font-size: 24px;
 }
 
 .footer--icons {
@@ -61,6 +62,10 @@
     .footer__content {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .footer__heading {
+        font-size: 32px;
     }
 }
 @media only screen and (min-width: 1024px) {}

@@ -109,3 +109,17 @@
         }
     }
 }
+@media only screen and (min-height: 700px) {
+    .section--content--products {
+        .products__image {
+            height: 80vh;
+        }
+    }
+}
+@media only screen and (min-height: 900px) {
+    .section--content--products {
+        .products__image {
+            height: 60vh;
+        }
+    }
+}

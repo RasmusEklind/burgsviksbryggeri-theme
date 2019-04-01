@@ -17,6 +17,7 @@
     margin: 0 auto 15px;
     text-align: center;
     color: #444;
+    font-size: 24px;
 }
 
 .section--contact--contact {
@@ -108,5 +109,9 @@
         padding-right: 50px;
         margin: 0 auto;
         text-align: center;
+    }
+
+    .section__heading--contact {
+        font-size: 32px;
     }
 }
