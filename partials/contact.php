@@ -1,11 +1,11 @@
-<div class="section section--contact">
+<div class="section section--contact"id="kontakt">
   <span class="a11y-accesskeys-span" tabindex="-1"></span>
   <div class="section__content section__content--contact">
 
       <div class="section--contact--contact">
            <h2 class="section__heading section__heading--contact">ADRESS</h2>
         <div class="contact--address">
-          <span>Burgsvik<br>623 35<br>Skolvägen 10</span>
+          <span>Skolvägen 10<br>623 35 Burgsvik</span>
         </div>
       </div>
 

@@ -49,6 +49,10 @@
     }
 }
 
+.top__navigation--title {
+    display: none;
+}
+
 .top--arrow {
     position: absolute;
     display: inline-block;
@@ -62,14 +66,19 @@
     @include font-size(24);
 }
 @media only screen and (min-width: 768px) {
-    // .top__navigation--logo {
-    //     left: 0;
-    //     margin: 0 auto;
-    //     display: block;
-    //     max-width: 460px;
-    //     text-align: center;
-    //     position: relative;
-    // }
+    .top__navigation--title {
+        display: inline-block;
+        max-width: 100px;
+        margin-top: 20px;
+        margin-right: 30px;
+        font-family: $font-n2-family;
+        color: #333;
+        letter-spacing: 0.5px;
+    }
+
+    .desktop-show {
+        display: inline-block;
+    }
 }
 @media only screen and (min-width: $mq-medium) {
     // .main--header {

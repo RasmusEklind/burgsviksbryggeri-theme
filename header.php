@@ -51,6 +51,7 @@
                   <ul class="nav__desktop">
                       <a class="top__navigation--link" href="/">
                         <img class="top__navigation--image" src="<?php echo get_template_directory_uri(); ?>/assets/img/top-logo.png" alt="Burgsviksbryggeri"/></a>
+                        <p href="<?php echo $url; ?>" class="top__navigation--title nostylelink desktop-show">BURGSVIKS<br> BRYGGERI</p>
                     <?php   foreach ($links as $key => $link): $url = apply_filters('the_permalink', $link->url); ?>
                     <li class="nav__desktop--item nostylelist">
                       <a class="nav__desktop--link nostylelink" data-scroll href="<?php echo $url; ?>"><?php echo $link->title; ?></a>
