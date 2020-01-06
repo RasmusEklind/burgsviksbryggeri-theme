@@ -29,6 +29,7 @@
         <div class="footer__content">
             <a class="nostylelink" href="/">
                 <img class="footer__content--logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/top-logo.png" alt="Burgsviksbryggeri"/>
+                <h3 class="footer__content--title">BURGSVIKS<br>BRYGGERI</h3>
             </a>
 
         <h2 class="footer__heading">FÖLJ OSS</h2>

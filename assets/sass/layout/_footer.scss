@@ -21,7 +21,13 @@
     max-width: 100px;
     display: block;
     width: auto;
-    margin: 25px auto;
+    margin: 25px auto 16px;
+}
+
+.footer__content--title {
+    margin-top: 0;
+    color: #222;
+    font-size: 20px;
 }
 
 .footer--icons--item {
@@ -56,7 +62,11 @@
         max-width: 150px;
         display: block;
         width: auto;
-        margin: 50px auto;
+        margin: 50px auto 16px;
+    }
+
+    .footer__content--title {
+        font-size: 28px;
     }
 
     .footer__content {

@@ -24,26 +24,6 @@
 @import "modules/buttons";
 @import "modules/countdown";
 @import "externals/mobile-nav"; // .startpage-overlay {
-//     height: 100%;
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     background-color: #f7f4f4;
-//     z-index: 999;
-//     width: 100%;
-//     opacity: 1;
-//     display: block;
-// }
-//
-// #hidden {
-//     animation: signup-response 0.5s 1;
-//     -webkit-animation: signup-response 0.5s 1;
-//     animation-fill-mode: forwards;
-//     animation-delay: 2s;
-//     -webkit-animation-delay: 1s;
-//     /* Safari and Chrome */
-//     -webkit-animation-fill-mode: forwards;
-// }
 @keyframes hidden {
     from {
         opacity: 1;
@@ -128,20 +108,24 @@
 }
 
 .top__navigation--image {
-    max-width: 55px;
-    margin: 0 15px 0 0;
-    vertical-align: middle;
+    max-width: 40px;
+    margin: 0 8px 4px;
 }
 
 .top__navigation--link {
     float: left;
-    padding: 0 0 15px 15px;
+    padding: 8px 16px;
+    text-decoration: none;
 }
 
 .top__navigation .nav__desktop--item {
     display: inline-block;
-    margin: 10px 8px;
+    padding: 28px 8px;
     font-size: 12px;
+}
+
+.nav__desktop {
+    max-width: 1493px;
 }
 
 .brewery--article {
@@ -172,13 +156,14 @@
 //////
 @media only screen and (min-width: 600px) {
     .top__navigation .nav__desktop--item {
-        margin: 12px 25px;
+        padding: 34px 25px;
         font-size: 16px;
+        margin: 0;
     }
 
     .top__navigation--image {
         max-width: 65px;
-        margin: 0 35px 0 0;
+        margin-left: 4px;
     }
 
     .product-grid--list {
@@ -197,15 +182,9 @@
     }
 }
 @media only screen and (min-width: 768px) {
-    .top__navigation--image {
-        max-width: 80px;
-        margin: 15px 35px 0 15px;
-        vertical-align: middle;
-    }
-
     .top__navigation .nav__desktop--item {
         display: inline-block;
-        margin: 33px 80px 30px 15px;
+        padding: 39px 25px;
         vertical-align: top;
         float: right;
     }
